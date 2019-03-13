@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:700');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* Font Awesome social media links
+  <i class="fab fa-facebook-f"></i>
+  <i class="fab fa-instagram"></i>
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  font-size: 1.1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Roboto';
+  line-height: 1.1;
+}
+
+.l-heading {
+  font-size: 4rem;
+  margin-bottom: 1.4rem;
+  line-height: 1;
+}
+
+.m-heading {
+  font-size: 3rem;
+  margin-top: 1.4rem;
+  margin-bottom: 1.4rem;
+  line-height: 1;
+}
+
+.m2-heading {
+  margin-bottom: 1.4rem;
+  line-height: 1;
+}
+
+.m3-heading {
+  margin-top: 1.4rem;
+  margin-bottom: 1.2rem;
+  line-height: 1;
+}
+
+p {
+  margin: 0.45rem;
+}
+
+.submissions {
+  line-height: 1.4rem;
+  margin: 0.45rem;
+  margin-left: 0rem;
+}
+
+.i-quote {
+  font-size: 1.1rem;
+  font-style: italic;
+  text-align: center;
+  padding: 1rem 0 0;
+}
+
+.s-quote {
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 0 0 1rem 0;
+}
+
+
+/* Navbar */
+
+#navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  white-space: nowrap;
+  background: #333;
+  color: #fff;
+  justify-content: space-between;
+  z-index: 1;
+  padding: .2rem .5rem;
+}
+
+/* #navbar img{
+  
+} */
+
+#navbar img {
+  display: flex;
+  width: 290px;
+  height: 60px;
+  border-radius: 0%;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#navbar ul li a {
+  color: #fff;
+  padding: 0.75rem;
+  margin: 0.25rem;
+}
+
+#navbar ul a:hover {
+  background: #e809a0;
+  border-radius: 5px;
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: #e809a0;
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin: 0 0 1.5rem;
+}
+.follow {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-dark {
+  background: #333;
+  color: #f4f4f4;
+}
+
+.bg-primary {
+  background: #e809a0;
+  color: #f4f4f4;
+}
+
+.py-1 { padding: 1.5rem 0; }
+.py-2 { padding: 2rem 0; }
+.py-3 { padding: 3rem 0; }
+
+.p-1 { padding: 1.5rem; }
+.p-2 { padding: 1.5rem; }
+.p-3 { padding: 3rem; }
+
+.list {
+  margin: 0.5rem 0;
+  list-style: none;
+}
+
+.list li {
+  padding: 0.5rem 0;
+  border-bottom: #444 dotted 1px;
+}
+
+/* #navbar .logo ul li {
+  font-family: 'Oswald:700';
+} */
+
+.btn {
+  display: inline-block;
+  color: #fff;
+  background: #e809a0;
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #be1f87;
+}
+
+.btn-drk {
+  background: #333;
+  color: #fff;
+}
+
+/* Showcase */
+#showcase {
+  background: #333 url('../img/beautiful-city-cobblestones-160678.jpg') no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+}
+
+#showcase .showcase-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 2rem;
+    /* Overlay */
+  
+  left: 0;
+  right: 0;
+  bottom: 0;
+    /* Darken Background pic 0 to 1 value 1=black */
+  background-color: rgba(0,0,0,0.1);
+}
+
+/* Section: Our Story */
+.items {
+  display: flex;
+  padding: 1rem;
+}
+
+#our-story .items .item {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+
+#our-story .items .item i {
+  background: #e809a0;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+ /* Section: Follow Us */
+ .items {
+  display: flex;
+  padding: 0rem;
+}
+
+#follow .items .item {
+  flex: 1;
+  text-align: center;
+  padding: 0rem;
+}
+
+#follow .items .item i {
+  color: #f4f4f4;
+  background: #e809a0;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 0rem;
+}
+
+/* Section: Submissions */
+#submissions {
+  display: flex;
+}
+
+#submissions div {
+  flex: 1;
+}
+
+#submissions p {
+  padding: .25rem
+}
+
+#submissions .submissions-img {
+  background: url('../img/beautiful-beauty-chin-922470\ \(1\).jpg') no-repeat center center/cover;
+}
+
+ /* Section: Submission Form */
+#contact {
+  display: flex;
+  background: #e809a0;
+  color: #f4f4f4;
+}
+
+#contact .map, #contact .contact-form {
+  flex: 1;
+}
+#contact .contact-form .form-group {
+  margin: .5rem;
+  font-size: 1.3rem;
+}
+
+#contact .contact-form label {
+  display: block;
+  color: #fff
+}
+
+#contact .contact-form input, 
+#contact .contact-form textarea {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem; 
+}  
+
+.map {
+  background: url(../img/attractive-beautiful-beauty-821417.jpg) no-repeat center center/cover;
+}

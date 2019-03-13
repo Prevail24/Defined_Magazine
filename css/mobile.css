@@ -1,0 +1,82 @@
+#what .items {
+  display: block;
+  padding: 1rem;
+}
+
+/* Align Icon to left */
+#what .items .item {
+  display: flex;
+  text-align: left;
+}
+
+/* Position Icon */
+#what .items .item i {
+  margin-right: 1.3rem;
+  align-self: center;
+  margin-bottom: 0;
+}
+
+/* Smartphones */
+@media(max-width: 500px) {
+  #navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #navbar .logo {
+    display: block;
+    padding: 0.5rem;
+  }
+  
+  #navbar .logo img {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #navbar .logo ul {
+    display: block;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  #showcase .showcase-content {
+    top: 140px;
+    margin-top: -2rem; 
+  }
+
+  #our-story {
+    display: block;
+  }
+
+  /* #our-story .who-img {   
+     
+  } */
+
+  #clients .items img {
+    width: 90%;
+  }
+
+  #submissions .submissions-img {
+    display: none;
+  }
+
+  #contact .map div {
+    display: none; 
+  } 
+
+  /* #contact-form {
+    flex-direction: column;
+  } */
+  
+  
+}
+
+@media(max-height: 568px){
+  .l-heading {
+    font-size: 3rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+}

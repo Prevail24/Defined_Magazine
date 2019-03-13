@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" media="screen and (max-width 1100px)" href="./css/widescreen.css">
+  <link rel="stylesheet" media="screen and (max-width 678px)" href="./css/mobile.css">
+ 
+  <title>Defined Magazine | Fashion Glamour Trends & Advice</title>
+
+</head>
+<body id="home">    
+    
+    <!-- Navbar -->
+
+  <nav id="navbar">
+    <h1 class="logo">
+        <img class="logo" src="./img/DEFINED-LOGO 2.png" alt="Defined Magaizne Logo">
+    </h1>
+    <ul> 
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#our-story">OUR STORY</a></li>
+      <li><a href="#follow">FOLLOW US</a></li>
+      <li><a href="#submissions">SUBMISSIONS</a></li>
+    </ul>
+  </nav>
+    
+  <!-- Header Showcase -->
+  
+  <header id="showcase">
+    <div class="showcase-content">
+      <h1 class="l-heading">
+      What Defines You
+      </h1>
+      <p class="lead">We believe everyone is beautiful and there is no set way to define attraction.</p>
+  
+      <a href="#our-story" class="btn">Read More</a>
+    </div>
+  </header>
+
+  <section id="our-story" class="bg-light py-1">
+    <div class= "container">
+      <h2 class="m-heading text-center">Our Story</h2>
+      <p class="text-center lead">Defined Magazine is a Colorado based fashion, beauty, and lifestyle publication that celebrates the unique look of every individual. We take pride in our belief that everyone is beautiful, and that there isn't a set way to define attraction.</p>
+
+      <p class="i-quote">"To all the girls that think you're fat because you're not a size zero <span class="text-primary"> YOU'RE THE BEAUTIFUL ONE</span> it's society who's ugly"</p>    
+      <p class="s-quote">~ Marilyn Monroe ~</p>
+    </div>
+  </section> 
+
+  <!-- Section: Follow Us -->
+  <section id="follow" class="bg-light py-1">
+    <div class="container">
+      <h2 class="m-heading text-center"><span class="text-primary">Follow</span> Us</h2>
+      <div class="items">
+        <div class="item">
+            <a href="https://www.facebook.com/DefinedMagazine/">
+          <i class="fab fa-facebook-square fa-4x"></i></a>
+        </div>
+        <div class="item">
+          <a href="https://instagram.com/definedmagazine?utm_source=ig_profile_share&igshid=1a4l2stf9r5o6"><i class="fab fa-instagram fa-4x"></i></a>
+        </div>
+        <div class="item">
+          <a href="https://instagram.com/definedmagazine?utm_source=ig_profile_share&igshid=1a4l2stf9r5o6"><i class="fab fa-twitter fa-4x"></i></a>
+        </div>
+        
+    </div>
+  </section>
+
+  <!-- Section: Submissions -->
+  <section id="submissions">
+    <div class="submissions-img"></div>
+    <div class="submissions-text bg-dark p-2">
+      <h2 class="m-heading">WE ARE ACCEPTING<span class="text-primary">  SUBMISSIONS!</span></h2>
+      <h2 class="m2-heading">Submissions must follow the guidelines below:</h2>
+      <ul class="list">
+        <li>Title for the editorial</li>
+        <li>Photographer</li>
+        <li>Model</li>
+        <li>MUA & Hair</li>
+        <li>Wardrobe</li>
+      </ul>
+      <h2 class="m3-heading"><span class="text-primary">  PHOTOS </span> Must Be:</h2>
+      <ul class="list">
+        <li>Vertical Photographs - 8x10 minumum</li>
+        <li>Horizontal Photographs - 17x11 minimum</li>
+        <li>300-350dpi</li>
+      </ul>
+      <p class="submissions">Please send 3-8 images (no photo will be accepted with a visible watermark). Include the edition you are submitting for in the subject line of the email along with the photographer's name.</p>
+      <p class="submissions">Upon publication, tearsheets will be made available via Dropbox for download, and copies of the magazines will be available, with a link added showing the location for purchase.</p>
+      <p class="submissions">Fill out the form below to submit items for publication:</p>
+    </div>
+  </section>
+
+  <!-- Section: Contact -->
+  <section id="contact">
+    <div class="contact-form bg-primary p-2">
+      <h2 class="m-heading">Please fill out all fields and upload images</h2>
+      <p></p>
+      <form action="process.php" method="POST">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="text" name="email" id="email" placeholder="Enter Email">
+        </div>
+          <div class="form-group">
+            <label for="title">Title of Editorial</label>
+            <input type="text" name="title" id="title" placeholder="Enter Title of Editorial">
+          </div>
+        <div class="form-group">
+          <label for="photographer">Photographer</label>
+          <input type="text" name="photographer" id="photographer" placeholder="Photographer">
+        </div>
+        <div class="form-group">
+          <label for="Model">Model(s) Name</label>
+          <input type="text" name="model" id="model" placeholder="Model(s) Name">
+        </div>
+        <div class="form-group">
+          <label for="MUAhair">MUA & Hair</label>
+          <input type="text" name="MUAhair" id="MUAhair" placeholder="MUA & Hair">
+        </div>
+        <div class="form-group">
+          <label for="wardrobe">Wardrobe</label>
+          <input type="text" name="wardrobe" id="wardrobe" placeholder="Wardrobe">
+        </div>
+        <div class="form-group">
+          <label for="message">Upload Photo(s)</label>
+          <input type="file" id="upload" placeholder=""></textarea>
+        </div>
+        <input type="submit" value="Send" class="btn btn-drk">
+      </form>
+    </div>
+    <div class="map">
+        <img src="url(../img/attractive-beautiful-beauty-821417.jpg) no-repeat center center/cover;" alt="">
+      </div>
+  </section>
+       
+<!-- Footer -->
+  <footer id="main-footer" class="bg-dark text-center py-1">
+    <div class="container">
+      <p>Copyright &copy; 2019, Defined Magazine. All Rights Reserved</p>
+    </div>
+  </footer>
+  
+  <!-- JQurey CDN  -->
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+  <!-- Google Maps JS link -->
+  <script src="js/main.js"></script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjMZ7BO9nLFLYmu9FsoEJO4kXaViVyvyY&callback=initMap"
+    async defer></script>
+
+
+</body>
+</html>
